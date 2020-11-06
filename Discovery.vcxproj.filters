@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{e720d7f1-69cf-4864-a073-6fb32a8f61f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ChemView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Discovery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DiscoveryControls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DiscoveryDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\DiscoveryView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\qsdrundlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\QsdViews.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes\ChemView.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\Discovery.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\DiscoveryControls.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\DiscoveryDoc.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\DiscoveryView.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\MainFrm.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\qsdrundlg.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\qsdviews.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\resource.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\StdAfx.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\targetver.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource\Discovery.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\Discovery.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\slabmode.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\track1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\track1a.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\track2.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\track2a.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\Track3.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\track3a.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\track4.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\images\track4a.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resource\images\blue.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\cyan.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\Discovery.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\Discovery_2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\DiscoveryDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\green.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\li_blue.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\li_red.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\purple.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\red.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\slabold.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\slabwarn.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="resource\images\yellow.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

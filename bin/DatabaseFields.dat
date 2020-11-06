@@ -1,0 +1,73 @@
+# DatabaseFields.dat
+# Field names that can be evaluated by the QSD and Chemistry tool.
+# Created by Pierre Villars, 25 Dec 1999.
+# Reformatted for Discovery.exe by Klaus Brandenburg, 26 Jan 1999.
+#
+# S/D LPF Data Fields:
+# CDROM_STRUCDIF
+[S4A13]	Structure type	#[S4A13](strucdif)
+[S4A12]	Pearson symbol	#[S4A12](strucdif)
+[S4G1]	Parthe symbol	#[S4G1](strucdif)
+[S12C21]	Space group number	#[S12C21](strucdif)
+[S4B1]	modification	#[S4B1](strucdif)
+[S6I1]	colour	#[S6I1](strucdif)
+[S12D4]	density calculated	#[S12D4](strucdif)
+[S12H3]	density measured	#[S12H3](strucdif)
+[S6A3]	congruent melting point	#[S6A3](strucdif)
+[S6B3]	peritectic temperature	#[S6B3](strucdif)
+[S6C3]	peritectoid temperature	#[S6C3](strucdif)
+[S12F214]	atomic environment	#[S12F214](S12F2)
+[S12F214]	count on distinct atomic environment within a structure type; count on distinct [S12F214](S12F2) per sentrynumber
+[S12F213]	Coordination number	#[S12F213](S12F2)
+[S12E720]	Niggli's reduced cell	#[S12E720](strucdif1)
+[S4P]	mismatch structure	#[S4P](strucdif)
+[S4Q]	Order/disorder structure	#[S4Q](strucdif)
+[S4S1]	Magnetic structure	#[S4S1](strucdif)
+[S4A52]	Stoichiometry of compounds	#[S4A52](strucdif)||[S4A54](strucdif)
+
+# C LPF Data Fields:
+# CDROM_CONST
+[FNF]	formers/nonformers #[new simple table]
+
+# P LPF Data Fields:
+# CDROM_PROPERTY
+[P3P]	ferroelasticity	#[P3P](class)
+[P4S]	Hydrogen diffusion	#[P4S](addinf)
+[P4T]	Diffusion	#[P4T](addinf)
+[P5Y]	Ionic conduction	#[P5Y](class)
+[P5L]	Photoconductivity	#[P5L](class)
+[P6M]	Non-linear optical properties	#[P6M](class)
+[P6P]	Luminescence	#[P6P](addinf)
+[P8V]	Kondo behaviour	#[P8V](addinf)
+[P8X]	Resonance measurements	#[P8X](addinf)
+[P8Z]	De Haas-van Alphen measurements	#[P8Z](addinf)
+[P9J]	Critical current	#[P9J](addinf)
+[P3B3]	Hardness (kg mm-2)	#[P3B3](propty)||[P3B5]  (kg mm-2)
+[P3H15]	Young's modulus (GPa)	#[P3H15]propty) (GPa)
+[P3L5]	Shear modulus (GPa)	#[P3L5](propty) (GPa)
+[P3M1]	Poisson's ratio (/)	#[P3M1]propty)  (/)
+[P4A35]	Coefficient of isobaric volume thermal expansion (/)	#[P4A35]propty) (/)
+[P4D3]	Enthalpie of compound formation (J f.u.-1 or kJ g-atom-1)	#[P4D3](propty) (J f.u.-1 or kJ g-atom-1)
+[P4H13]	Debye temperature (K)	#[P4H13](propty) (K)
+[P4Q3]	Seebeck coefficient (microV K-1)	#[P4Q3](propty) (microV K-1)
+[P4R5]	Thermal conductivity (W K-1 m-1)	#[P4R5](propty) (W K-1 m-1)
+[PD15]	Energy gap (eV)	#[PD15](propty) (eV)
+[P5H5]	Electrical conductivity (ohm-1 m-1)	#[P5H5](propty) (ohm-1 m-1)
+[P5I5]	Electrical resistivity (ohm m)	#[P5I5](propty) (ohm m)
+[P5O5]	Hall coefficient (m3 A-1 s-1)	#[P5O5](propty) (m3 A-1 s-1)
+[P5V5]	Electron mobility (m2 V-1 s-1)	#[m2 V-1 s-1](propty) [P5V5] (m2 V-1 s-1)
+[P6A1]	Colour (/)	#[P6A1](property2) (/)
+[P6F11]	Static dielectric constant (/)	#[P6F11](propty) (/)
+[P6O3]	Work function (eV)	#[P6O3](propty) (eV)
+[P7A3]	Ferroelectric Curie temperature (K)	#[P7A3](propty) (K)
+[P7C1]	Dielectric permittivity (K)	#[P7C1](propty) (K)
+[P7D]	Piezoelectric strain constant (/)	#[P7D](propty) (/)
+[P7E]	Pyroelectric Coefficient (/)	#[P7E](propty) (/)
+[P8A13]	Magnetic susceptibility (emu mole-1)	#[P8A13](propty) (emu mole-1)
+[P8C3]	Paramagnetic Curie temperature (K)	#[P8C3](propty) (K)
+[P8D13]	Neel temperature (K)	#[P8D13](propty) (K)
+[P8E13]	Curie temperature (K)	#[P8E13](prop) (K)
+[P8J17]	Saturation magnetization (T or A m-1)	#[P8J17](propty) (T or A m-1)
+[P9A3]	Critical temperature (K)	#[P9A3](propty) (K)
+[P9K3]	Coherence length (nm)	#[P9K3](propty) (nm)
+[P9L3]	London penetration depth (nm)	#[P9L3](propty) (nm)

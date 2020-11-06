@@ -1,0 +1,21 @@
+QSD 1.0 (C) CRYSTAL IMPACT 1998,99
+QSD RESULTS
+
+Considered 3 elemental properties:
+ atomic number (01)
+ elektronegativity (Martinov/Batsanov) (02)
+ magnetic resonance (03)
+
+Considered 2 mathematical operations:
+ Sum (01)
+ Difference (02)
+
+Investigated 6431 ternary compounds
+
+Total runs = 20
+Top 10 results with minimum quality of 0%:
+  1 01-01 / 01-02 / 02-02  ... 5787 ( 89.99%)
+  2 01-01 / 01-02 / 02-01  ... 5719 ( 88.93%)
+  3 01-02 / 02-01 / 02-02  ... 5675 ( 88.24%)
+
+END

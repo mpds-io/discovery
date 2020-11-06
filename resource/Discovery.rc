@@ -1,0 +1,928 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Discovery.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_TRACKSHIFT          CURSOR  DISCARDABLE     "images\\Track3.cur"
+IDC_TRACKROTZ           CURSOR  DISCARDABLE     "images\\track2.cur"
+IDC_TRACKROTXY          CURSOR  DISCARDABLE     "images\\track1.cur"
+IDC_TRACKZOOM           CURSOR  DISCARDABLE     "images\\track4.cur"
+IDC_TRACKROTXY_A        CURSOR  DISCARDABLE     "images\\track1a.cur"
+IDC_TRACKROTZ_A         CURSOR  DISCARDABLE     "images\\track2a.cur"
+IDC_TRACKSHIFT_A        CURSOR  DISCARDABLE     "images\\track3a.cur"
+IDC_TRACKZOOM_A         CURSOR  DISCARDABLE     "images\\track4a.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "images\\Discovery.ico"
+IDI_RED                 ICON    DISCARDABLE     "images\\red.ico"
+IDI_BLUE                ICON    DISCARDABLE     "images\\blue.ico"
+IDI_GREEN               ICON    DISCARDABLE     "images\\green.ico"
+IDI_PURPLE              ICON    DISCARDABLE     "images\\purple.ico"
+IDI_CYAN                ICON    DISCARDABLE     "images\\cyan.ico"
+IDI_YELLOW              ICON    DISCARDABLE     "images\\yellow.ico"
+IDI_LIGHT_RED           ICON    DISCARDABLE     "images\\li_red.ico"
+IDI_LIGHT_BLUE          ICON    DISCARDABLE     "images\\li_blue.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_QSD_SELECT_RUN DIALOG DISCARDABLE  0, 0, 256, 95
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Select Run"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Mode",IDC_STATIC,7,7,112,56,WS_GROUP
+    CONTROL         "&Search",IDC_TYPE1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,14,20,48,10
+    CONTROL         "Single &Run",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,14,
+                    34,51,10
+    CONTROL         "Pre&diction",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,14,
+                    48,47,10
+    GROUPBOX        "Level",IDC_STATIC,136,7,112,56,WS_GROUP
+    CONTROL         "Chemical syste&m",IDC_LEVEL1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,144,20,68,10
+    CONTROL         "&Compound",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,144,
+                    34,50,10
+END
+
+IDD_QSD_SINGLE_RUN DIALOG DISCARDABLE  0, 0, 256, 95
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Property:",IDC_STATIC,34,7,29,8
+    LTEXT           "Operation:",IDC_STATIC,202,7,34,8
+    LTEXT           "&x-axis:",IDC_STATIC,7,20,20,8
+    COMBOBOX        IDC_PROP_X,32,18,160,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_OP_X,202,18,49,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&y-axis:",IDC_STATIC,7,36,20,8
+    COMBOBOX        IDC_PROP_Y,32,34,160,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_OP_Y,202,34,49,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "&z-axis:",IDC_STATIC,7,52,20,8
+    COMBOBOX        IDC_PROP_Z,32,50,160,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_OP_Z,202,50,49,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Load data...",IDC_LOAD,32,74,64,14
+    LTEXT           "",IDC_FILENAME,99,77,152,8
+END
+
+IDD_QSD_MULTIPLE_RUN DIALOG DISCARDABLE  0, 0, 256, 106
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Property or Properties:",IDC_STATIC,34,7,80,8
+    LISTBOX         IDC_PROP,32,20,160,54,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Operation(s):",IDC_STATIC,204,7,47,8
+    LISTBOX         IDC_OP,203,21,48,54,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Total runs:",IDC_STATIC,32,82,36,8
+    LTEXT           "",IDC_RUNS,70,82,40,8
+    PUSHBUTTON      "&All",IDC_ALL,203,78,48,14
+END
+
+IDD_QSD_CONFIGURATION DIALOG DISCARDABLE  0, 0, 256, 106
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Number of best results:",IDC_STATIC,7,9,73,8
+    EDITTEXT        IDC_NUM,88,7,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,117,7,11,
+                    14
+    LTEXT           "&Maximum neighbours:",IDC_STATIC,7,27,69,8
+    EDITTEXT        IDC_MAX,88,25,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,116,25,11,
+                    14
+    LTEXT           "Minimum &quality:",IDC_STATIC,7,45,69,8
+    EDITTEXT        IDC_QUALITY,88,43,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,116,43,11,
+                    14
+    CONTROL         "Neighbour &error",IDC_ERROR,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,145,7,65,10
+END
+
+IDD_QSD_PROGRESS DIALOG DISCARDABLE  0, 0, 274, 58
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Running Multiple QSD Runs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Cancel",IDCANCEL,217,21,50,14
+    LTEXT           "Preparing data...",IDC_WHAT,7,7,160,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",0x0,7,20,
+                    200,14
+    LTEXT           "Run %d of %d. Best result: %5.2f percent.",IDC_RESULT,7,
+                    42,200,8
+END
+
+IDD_QSD_CONF_SINGLE DIALOG DISCARDABLE  0, 0, 200, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Settings For Single QSD Run"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Maximum neighbours:",IDC_STATIC,7,9,69,8
+    EDITTEXT        IDC_MAX,88,7,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,116,7,11,
+                    14
+    CONTROL         "Neighbour &error",IDC_ERROR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,28,65,10
+    DEFPUSHBUTTON   "OK",IDOK,143,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,24,50,14
+END
+
+IDD_QSD_IMPORT DIALOG DISCARDABLE  0, 0, 260, 62
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "Preparing Prediction Run"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_WHAT,7,7,246,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,7,
+                    23,246,14
+    LTEXT           "",IDC_STATUS,7,47,246,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_QSD_SELECT_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_QSD_SINGLE_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_QSD_MULTIPLE_RUN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_QSD_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_QSD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 51
+    END
+
+    IDD_QSD_CONF_SINGLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_QSD_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SLABWARN            BITMAP  DISCARDABLE     "images\\slabwarn.bmp"
+IDB_SLABWARN_OLD        BITMAP  DISCARDABLE     "images\\slabold.bmp"
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_SLABMODE            CURSOR  DISCARDABLE     "images\\slabmode.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_DISCOVTYPE          ICON    DISCARDABLE     "images\\DiscoveryDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 112
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Discovery"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,20
+    LTEXT           "Discovery Version 2.0",IDC_STATIC,40,10,128,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1999-2001 Crystal Impact GbR, Bonn, Germany; www.crystalimpact.com",
+                    IDC_STATIC,40,25,140,16
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+    LTEXT           "Authors:",IDC_STATIC,40,48,26,8
+    LTEXT           "Dr. Michael Berndt",IDC_STATIC,70,48,98,8
+    LTEXT           "Dr. Klaus Brandenburg",IDC_STATIC,70,56,98,8
+    LTEXT           "Latest update: 27 March 2001",IDC_STATIC,40,71,129,8
+    LTEXT           "Ported to Windows 8.1 16 September 2020",IDC_STATIC,40,86,140,8
+    LTEXT           "by Fulcrum.013, Mariupol, Ukraine",IDC_STATIC,40,94,129,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "images\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    BUTTON      ID_FILE_PRINT_DIRECT
+    BUTTON      ID_CONTEXT_HELP
+    SEPARATOR
+    BUTTON      ID_REPORT_OPTIONS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Invert Selection\tCtrl+I",   ID_EDIT_SELECT_INV
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "Status &Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Report",                     ID_VIEW_REPORT
+        MENUITEM "&QSD",                        ID_VIEW_QSD
+        MENUITEM "&Chemistry",                  ID_VIEW_CHEMISTRY
+        MENUITEM "&Statistics",                 ID_VIEW_STATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "QSD &Profiles",               ID_VIEW_QSD_PROFILE
+        MENUITEM "QSD &Discovery Space",        ID_VIEW_QSD_CUBE
+    END
+    POPUP "&Report"
+    BEGIN
+        MENUITEM "&Options...",                 ID_REPORT_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Discovery...",         ID_APP_ABOUT
+    END
+END
+
+IDR_REPORT_HEADER MENU DISCARDABLE 
+BEGIN
+    POPUP "Report Header"
+    BEGIN
+        MENUITEM "&Select Column",              ID_REPORT_SELECT_COLUMN
+        MENUITEM SEPARATOR
+        MENUITEM "Sort &Ascending",             ID_REPORT_SORT_ASC
+        MENUITEM "Sort &Descending",            ID_REPORT_SORT_DESC
+        MENUITEM "Do &Not Sort",                ID_REPORT_SORT_NO
+    END
+END
+
+IDR_REPORT_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "Report List"
+    BEGIN
+        MENUITEM "Select All\tCtrl+A",          ID_EDIT_SELECT_ALL
+        MENUITEM "&Invert Selection\tCtrl+I",   ID_EDIT_SELECT_INV
+        MENUITEM SEPARATOR
+        MENUITEM "&Save List As...",            ID_FILE_SAVE_DATA
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+    END
+END
+
+IDR_QSD MENU DISCARDABLE 
+BEGIN
+    POPUP "&QSD"
+    BEGIN
+        MENUITEM "&Options...",                 ID_QSD_OPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Start &Run...",               ID_QSD_START
+    END
+END
+
+IDR_REPORT MENU DISCARDABLE 
+BEGIN
+    POPUP "&Report"
+    BEGIN
+        MENUITEM "&Options...",                 ID_REPORT_OPTIONS
+    END
+END
+
+IDR_CHEMISTRY MENU DISCARDABLE 
+BEGIN
+    POPUP "&Chemistry"
+    BEGIN
+        MENUITEM "&Options...",                 ID_CHEM_OPTIONS
+    END
+END
+
+IDR_STATISTICS MENU DISCARDABLE 
+BEGIN
+    POPUP "&Statistics"
+    BEGIN
+        MENUITEM "&Options...",                 ID_STAT_OPTIONS
+    END
+END
+
+IDR_PROFILE_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "Profile List"
+    BEGIN
+        MENUITEM "&Start Single Run...",        ID_QSD_START_SINGLE
+        MENUITEM SEPARATOR
+        MENUITEM "&Copy All\tCtrl+C",           ID_EDIT_COPY
+    END
+END
+
+IDR_QSD_GRAPH MENU DISCARDABLE 
+BEGIN
+    POPUP "QSD Graph"
+    BEGIN
+        MENUITEM "&Adjust\tF9",                 ID_VIEW_QSD_ADJUST
+        MENUITEM SEPARATOR
+        MENUITEM "&XY Projection",              ID_VIEW_QSD_PROJ_XY
+        MENUITEM "X&Z Projection",              ID_VIEW_QSD_PROJ_XZ
+        MENUITEM "&YZ Projection",              ID_VIEW_QSD_PROJ_YZ
+        MENUITEM "Closest 2D Projection",       ID_VIEW_QSD_PROJ_CLOSEST
+        MENUITEM SEPARATOR
+        MENUITEM "Define &Slab",                ID_VIEW_QSD_SLAB
+        MENUITEM "Undefine S&lab",              ID_VIEW_QSD_NO_SLAB
+        MENUITEM SEPARATOR
+        POPUP "&Tracking"
+        BEGIN
+            MENUITEM "&Rotate Along X/Y-Axes",      ID_VIEW_ROTXY
+            MENUITEM "R&otate Along Z-Axis",        ID_VIEW_ROTZ
+            MENUITEM "&Shift",                      ID_VIEW_SHIFT
+            MENUITEM "&Zoom",                       ID_VIEW_ENLARGE
+            MENUITEM SEPARATOR
+            MENUITEM "&No Tracking",                ID_VIEW_NOTRACK
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Dots",                       ID_VIEW_QSD_DOTS
+        MENUITEM "&Balls",                      ID_VIEW_QSD_BALLS
+        MENUITEM SEPARATOR
+        MENUITEM "&Grid",                       ID_VIEW_QSD_GRID
+    END
+END
+
+IDR_QSD_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "QSD List"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECT_ALL
+        MENUITEM "&Invert Selection\tCtrl+I",   ID_EDIT_SELECT_INV
+        MENUITEM SEPARATOR
+        MENUITEM "&Save List...",               ID_FILE_SAVE_DATA
+    END
+END
+
+IDR_QSD_HISTO MENU DISCARDABLE 
+BEGIN
+    POPUP "QSD Histogram"
+    BEGIN
+        MENUITEM "Full Display",                ID_VIEW_QSD_HISTO_FULL
+        MENUITEM "Zoom",                        ID_VIEW_QSD_HISTO_ZOOM
+    END
+END
+
+IDR_TRASH MENU DISCARDABLE 
+BEGIN
+    POPUP "Trash"
+    BEGIN
+        MENUITEM "Datapoints",                  ID_INDICATOR_COUNT
+        MENUITEM "Selected",                    ID_INDICATOR_SEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_F9,          ID_VIEW_QSD_ADJUST,     VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DISCOVERY MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DISCOVERY\0"
+            VALUE "LegalCopyright", "Copyright © 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DISCOVERY.EXE\0"
+            VALUE "ProductName", "DISCOVERY Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Discovery\n\nDiscovery\nDiscovery Files (*.dsc)\n.DSC\nDiscovery.Document\nDiscovery Document"
+    IDS_OPENFILTER          "Discovery Document (*.qsd,*.dat)|*.QSD;*.DAT|Text with separators (*.CSV)|*.CSV|Text with tabs (*.TXT)|*.TXT|All files (*.*)|*.*||"
+    IDS_SAVELISTFILTER      "Text with separators (*.CSV)|*.CSV|Text with tabs (*.TXT)|*.TXT|Formatted text with spaces (*.PRN)|*.PRN||"
+    IDS_REPORT_VIEW_OF      "Report View of: "
+    IDS_PAGE_X_OF_X         "Page %d of %d"
+    IDS_UNKNOWN_FILE_FORMAT "Unknown file format."
+    IDS_LOAD_ERROR          "Load Error."
+    IDS_RUN_QSD_SHEET_TITLE "Run QSD"
+    IDS_NO_ERROR            "No error."
+    IDS_GENERIC_ERROR       "Generic error."
+    IDS_FILE_NOT_FOUND      "File not found."
+    IDS_BAD_PATH            "Bad path."
+    IDS_TOO_MANY_OPEN_FILES "Too many open files."
+    IDS_ACCESS_DENIED       "Access denied."
+    IDS_REMOVE_CURRENT_DIR  "Remove current directory."
+    IDS_DIRECTORY_FULL      "Directory full."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Discovery"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew (Ctrl+N)"
+    ID_FILE_OPEN            "Open an existing document\nOpen (Ctrl+O)"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave (Ctrl+S)"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document with default printer settings\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full page(s)\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy (Ctrl+C)"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut (Ctrl+X)"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste (Ctrl+V)"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire list or all objects, rsp.\nSelect All (Ctrl+A)"
+    ID_EDIT_UNDO            "Undo the last action\nUndo (Ctrl+Z)"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_QSD             "View QSD\nQSD"
+    ID_VIEW_REPORT          "View initial report view of all entries with selected database fields\nReport View"
+    ID_EDIT_SELECT_INV      "Invert the current selection\nInvert selection (Ctrl+I)"
+    ID_EDIT_SELECT_COLUMN   "Make this column the selected column"
+    ID_REPORT_SELECT_COLUMN "Make this column the selected column"
+    ID_REPORT_SORT_ASC      "Sort this column in ascending order"
+    ID_REPORT_SORT_DESC     "Sort this column in descending order"
+    ID_REPORT_SORT_NO       "Do not sort this column"
+    ID_FILE_SAVE_DATA       "Save the list in a text file"
+    ID_QSD_START            "Starts a single or multiple runs of QSD\nStart QSD Run"
+    ID_REPORT_OPTIONS       "Settings for the display and sorting of the items in the Report View\nReport View Options"
+    ID_CHEM_OPTIONS         "Settings for the display of the Chemistry tool"
+    ID_STAT_OPTIONS         "Settings for the Statistics tool"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BAD_SEEK            "Bad seek."
+    IDS_HARD_IO             "Hard IO"
+    IDS_SHARING_VIOLATION   "Sharing violation."
+    IDS_LOCK_VIOLATION      "Lock violation."
+    IDS_DISK_FULL           "Disk full."
+    IDS_END_OF_FILE         "End of file."
+    IDS_UNKNOWN_FILE_ERROR  "Unknown file error."
+    IDS_COULD_NOT_READ_ALL_PROPERTIES 
+                            "Read error in file %1:\nCould not read all elemental properties!"
+    IDS_CSV_NEED_AT_LEAST_THREE_COLUMNS 
+                            "Syntax error in CSV file!\nCSV file for Report View needs at least three columns!\nAbort reading of data."
+    IDS_CSV_FIRST_COLUMN_NOT_STOICHIOMETRY 
+                            "Syntax error in CSV file!\nThe first column must contain the stoichiometries of the compounds\n(indicated by the field name [S4A51])"
+    IDS_SUM                 "Sum"
+    IDS_DIFFERENCE          "Difference"
+    IDS_RATIO               "Ratio"
+    IDS_PRODUCT             "Product"
+    IDS_MAXIMUM             "Maximum"
+    IDS_RUN_X_OF_Y_BEST_RESULT_PERCENT 
+                            "Run %d of %d. Best result: %5.2f percent."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_CHEMISTRY       "View Chemistry tool\nView Chemistry"
+    ID_QSD_OPTIONS          "Settings for the display of the QSD tool\nQSD Options"
+    ID_VIEW_STATISTICS      "View Statistics tool\nView Statistics"
+    ID_QSD_STOP             "Stops current QSD run\nStop QSD Run"
+    ID_QSD_START_SINGLE     "Starts single run for the selected profile"
+    ID_VIEW_QSD_PROFILE     "View profiles when in QSD mode\nQSD Profiles"
+    ID_VIEW_QSD_CUBE        "View QSD Discovery Space when in QSD mode\nQSD Discovery Space"
+    ID_VIEW_QSD_ADJUST      "Adjust size and position of QSD Discovery Space to its view size\nAdjust"
+    ID_VIEW_QSD_PROJ_XY     "View towards xy plane of the Discovery Space\nXY Projection"
+    ID_VIEW_QSD_PROJ_XZ     "View towards xz-plane of the Discovery Space\nXZ Projection"
+    ID_VIEW_QSD_PROJ_YZ     "View along yz-plane of the Discovery Space\nYZ Projection"
+    ID_VIEW_QSD_DOTS        "Draw the datapoints in the Discovery Space as dots (pixels)\nDots"
+    ID_VIEW_QSD_BALLS       "Draws the datapoints in the Discovery Space as balls\nBalls"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PREPARING_DATA      "Preparing data..."
+    IDS_ANALYZING_DATA      "Analyzing data..."
+    IDS_QSD_RUN_CANCELED    "QSD run canceled by user."
+    IDS_QSD_CANNOT_READ_PROFILES 
+                            "Cannot read QSD profiles from PROFILES.DAT!"
+    IDS_QSD_CANNOT_READ_RESULTS 
+                            "Cannot read QSD Results Report from RESULTS.DAT!"
+    IDS_QSD_CANNOT_READ_DISCOVERYSPACE 
+                            "Cannot read data from QSD Discovery Space File QSDOUT.DAT!"
+    IDS_NOOPERATION         "(No operation)"
+    IDS_NEED_2D_PROJ_FOR_SLAB 
+                            "To define a slab, the Discovery Space must be in 2D projection. The slab will then be defined along the vertical axis. Press 'YES' if you want to bring the Discovery Space into 2D projection and continue. Otherwise press the 'NO' button."
+    IDS_CANNOT_CREATE_CSV_FILE_XXX "Cannot create CSV file %1"
+    IDS_INITIALIZING        "Initializing..."
+    IDS_RUN_X_OF_Y          "Run %d of %d."
+    IDS_PRODUCT2            "Product II"
+    IDS_MINIMUM             "Minimum"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_QSD_START_DIRECT     "Starts single run for a previously selected profile"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ROTXY           "Enables rotation along both x- and y-axis of the Discovery Space while pressing down the left mouse button\nRotate XY"
+    ID_VIEW_ROTZ            "Enables rotation along z-axis of the Discovery Space while pressing down the left mouse button\nRotate Z"
+    ID_VIEW_SHIFT           "Enables horizontal and vertical shift of the Discovery Space while pressing down the left mouse button\nShift"
+    ID_VIEW_ENLARGE         "Enables changing of the enlargement factor of the Discovery Space while pressing down the left mouse button\nZoom"
+    ID_VIEW_NOTRACK         "Disables tracking mode\nNo Tracking"
+    ID_VIEW_QSD_GRID        "Enables or disables grid on the back wall of Discovery Space when in 2D projection\nGrid"
+    ID_VIEW_QSD_PROJ_CLOSEST 
+                            "Bring Discovery Space in 2D projection closest to current orientation\nClosest 2D Projection"
+    ID_VIEW_QSD_SLAB        "Define slab along the vertical axis\nSlab"
+    ID_VIEW_QSD_NO_SLAB     "Undefine the previously defined slab, that means prevent datapoints from being clipped\nUndefine slab"
+    ID_VIEW_QSD_HISTO_FULL  "Display histogram in full size, i.e. from 0 to 100 percent\nFull Display"
+    ID_VIEW_QSD_HISTO_ZOOM  "Display only the range between minimum and maximum on the y-axis\nZoom"
+    ID_INDICATOR_COUNT      "View total number of datapoints of the current Discovery Space"
+    ID_INDICATOR_SEL        "View number of currently selected datapoints"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "Discovery.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
